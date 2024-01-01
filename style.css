@@ -1,0 +1,23 @@
+input[type="number"] {
+   width: 35px;
+}
+
+.square {
+   border: 1px solid black;
+   padding: 0px;
+   margin: 0px;
+}
+
+.page {
+   border: 1px solid black;
+   margin: 10px;
+}
+
+.line {
+   display: flex;
+   flex-direction: row;
+}
+
+#debug {
+   display: none;
+}

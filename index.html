@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>D&D Paper Map Calculator</title>
+      <link rel="stylesheet" href="./style.css" />
+      <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+   </head>
+   <body>
+      <main>
+         <h1>D&D Paper Map Calculator</h1>
+         <div>
+            Sheet size:
+            <input type="radio" id="A4" name="sheetSize" value="A4" checked /><label for="A4"
+               >A4</label
+            >
+            <input type="radio" id="A3" name="sheetSize" value="A3" /><label for="A3">A3</label>
+            <input type="radio" id="A2" name="sheetSize" value="A2" /><label for="A2">A2</label>
+         </div>
+         Square Size: <input type="number" id="squareSize" value="1" /> 
+         <input type="radio" id="unitInches" name="unit" value="inches" checked />
+         <label for="unitFeetPrint">Inches</label>
+         <input type="radio" id="unitCM" name="unit" value="cm" />
+         <label for="unitMetersPrint">cm</label>
+         Rotate:<input type="checkbox" id="rotate" name="rotate" value="rotate" />
+         <br />
+         Map Height: <input type="number" id="mapHeight" value="14" /> 
+         <br />
+         Map Width: <input type="number" id="mapWidth" value="22" />
+         <br />
+         Page Margin: <input type="number" id="margin" value="5" /> mm
+         <br />
+         <button type="button" id="calculate" onclick="calculate()">Calculate</button>
+         <div id="result"></div>
+         <div id="debug"></div>
+         <div id="squares"></div>
+      </main>
+      <script src="index.js"></script>
+   </body>
+</html>
